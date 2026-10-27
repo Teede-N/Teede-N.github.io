@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RetentIA : prédire et expliquer le churn client | Teede Augustin NOUDAMADJO</title>
+<meta name="description" content="RetentIA prédit et explique le départ des clients télécom : tests du khi-deux, régression logistique, comparaison de modèles (ROC-AUC 0,85). Cibler 20 % des clients capte 50 % des départs.">
+<meta name="keywords" content="prédiction du churn, data science, régression logistique, machine learning, Teede Augustin NOUDAMADJO">
+<meta name="author" content="Teede Augustin NOUDAMADJO">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<!--GSC-->
+<link rel="canonical" href="https://teede-n.github.io/retentia/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Teede Augustin NOUDAMADJO">
+<meta property="og:title" content="RetentIA : prédire et expliquer le churn client | Teede Augustin NOUDAMADJO">
+<meta property="og:description" content="RetentIA prédit et explique le départ des clients télécom : tests du khi-deux, régression logistique, comparaison de modèles (ROC-AUC 0,85). Cibler 20 % des clients capte 50 % des départs.">
+<meta property="og:url" content="https://teede-n.github.io/retentia/">
+<meta property="og:image" content="https://teede-n.github.io/assets/img/og-retentia.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RetentIA : prédire et expliquer le churn client | Teede Augustin NOUDAMADJO">
+<meta name="twitter:description" content="RetentIA prédit et explique le départ des clients télécom : tests du khi-deux, régression logistique, comparaison de modèles (ROC-AUC 0,85). Cibler 20 % des clients capte 50 % des départs.">
+<meta name="twitter:image" content="https://teede-n.github.io/assets/img/og-retentia.png">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "RetentIA", "description": "RetentIA prédit et explique le départ des clients télécom : tests du khi-deux, régression logistique, comparaison de modèles (ROC-AUC 0,85). Cibler 20 % des clients capte 50 % des départs.", "url": "https://teede-n.github.io/retentia/", "image": "https://teede-n.github.io/assets/img/retentia.jpg", "inLanguage": "fr-FR", "author": {"@id": "https://teede-n.github.io/#person"}, "sameAs": ["https://github.com/Teede-N/retentia-churn-dataiku"]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://teede-n.github.io/"}, {"@type": "ListItem", "position": 2, "name": "RetentIA", "item": "https://teede-n.github.io/retentia/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "@id": "https://teede-n.github.io/#person", "name": "Teede Augustin NOUDAMADJO", "alternateName": ["Teede NOUDAMADJO", "Teede-N"], "jobTitle": "Data Scientist Junior", "url": "https://teede-n.github.io/", "image": "https://teede-n.github.io/assets/img/og-home.png", "email": "mailto:teedeaugustinnoudamadjo41@gmail.com", "address": {"@type": "PostalAddress", "addressLocality": "Lyon", "addressCountry": "FR"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "École normale supérieure (Bénin)"}, {"@type": "CollegeOrUniversity", "name": "ESTIAM Lyon"}], "worksFor": {"@type": "Organization", "name": "ASS Transport"}, "founder": [{"@type": "Organization", "name": "Teedaïk", "url": "https://teedaik.com"}, {"@type": "Organization", "name": "Solution IA", "url": "https://teede-n.github.io/solution-ia/"}], "knowsAbout": ["Data science", "Statistique", "Machine learning", "Intelligence artificielle", "Python", "SQL", "Next.js", "Sécurité des applications web", "RGPD"], "sameAs": ["https://www.linkedin.com/in/teede-noudamadjo", "https://github.com/Teede-N", "https://teedaik.com"]}</script>
+</head>
+<body>
+<header class="top"><nav class="wrap"><a class="brand" href="../">Teede Augustin NOUDAMADJO</a><a href="../#projets">Projets</a><a href="../solution-ia/">Solution IA</a><a href="https://github.com/Teede-N">GitHub</a><a href="https://www.linkedin.com/in/teede-noudamadjo">LinkedIn</a></nav><section class="hero wrap"><p class="crumb"><a href="../">Accueil</a> › RetentIA</p><h1>RetentIA : prédire et expliquer le churn client</h1><p>Projet de data science sur 7 043 clients : du contrôle qualité des données aux recommandations métier, avec une démarche statistique rigoureuse et entièrement reproductible.</p><div class="btns"><a class="btn alt" href="https://github.com/Teede-N/retentia-churn-dataiku">Code et vidéos sur GitHub</a><a class="btn alt" href="mailto:teedeaugustinnoudamadjo41@gmail.com">Me contacter</a></div></section></header>
+<main class="wrap"><section><h2>Points clés</h2><ul class="points"><li>Tests du khi-deux, V de Cramér, intervalles de Wilson, test de Mann-Whitney</li><li>Régression logistique interprétable (odds ratios et intervalles de confiance)</li><li>Comparaison de 3 modèles en validation croisée : ROC-AUC 0,846 ± 0,013</li><li>Courbe de gains : 20 % des clients ciblés captent environ 50 % des départs</li><li>Pipeline Dataiku DSS et reproduction en Python (scikit-learn, statsmodels)</li></ul></section><section><h2>Aperçu</h2><div class="gallery"><figure><img src="../assets/img/retentia.jpg" alt="Courbes ROC et courbe de gains" width="960" height="600" loading="lazy"><figcaption>Courbes ROC et courbe de gains</figcaption></figure><figure><img src="../assets/img/retentia-or.jpg" alt="Odds ratios ajustés" width="960" height="600" loading="lazy"><figcaption>Odds ratios ajustés</figcaption></figure></div></section><section><h2>Auteur</h2><p><a href="../">Teede Augustin NOUDAMADJO</a>, Data Scientist Junior à Lyon. Retrouvez la documentation complète, le code et la vidéo de démonstration sur <a href="https://github.com/Teede-N/retentia-churn-dataiku">GitHub</a>.</p></section></main>
+<footer><div class="wrap">© 2026 Teede Augustin NOUDAMADJO · Data Scientist Junior · Lyon, France · <a href="mailto:teedeaugustinnoudamadjo41@gmail.com">teedeaugustinnoudamadjo41@gmail.com</a> · <a href="https://www.linkedin.com/in/teede-noudamadjo">LinkedIn</a> · <a href="https://github.com/Teede-N">GitHub</a></div></footer>
+</body>
+</html>
